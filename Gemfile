@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.4.1'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -16,8 +18,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'mongoid'
-gem 'figaro'
+gem 'mongoid', '~> 7.0.1'
+gem 'figaro', '~> 1.1.1'
 
 gem 'rails-i18n'
 

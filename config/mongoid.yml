@@ -163,10 +163,10 @@ test:
           mode: :primary
         max_pool_size: 1
 
-# production:
-#   clients:
-#     default:
-#       uri: <%= ENV['MONGOLAB_URI'] %>
-#     options:
-#       skip_version_check: true
-#       safe: true
+production:
+  clients:
+    default:
+      uri: <%= ENV['MONGOLAB_URI'] %>
+      options:
+        skip_version_check: true
+        safe: true
