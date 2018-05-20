@@ -17,6 +17,7 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'mongoid'
+gem 'figaro'
 
 gem 'rails-i18n'
 
@@ -54,5 +55,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-
+  # gem 'pg'
 end
