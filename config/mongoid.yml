@@ -163,10 +163,18 @@ test:
           mode: :primary
         max_pool_size: 1
 
+# <% uri = URI.parse(ENV["MONGODB_URI"]) %>
 production:
   clients:
     default:
-      uri: <%= ENV['MONGOLAB_URI'] %>
+      # database: <%= uri.path.sub('/','') %>
+      # username: <%= uri.user %>
+      # password: <%= uri.password %>
+      # hosts:
+        # - <%= uri.host %>:<%= uri.port %>
+      uri: <%= ENV['MONGODB_URI'] %>
+      # options:
+      #   skip_version_check: true
+      #   safe: true
       options:
-        skip_version_check: true
-        safe: true
+        connect_timeout: 15
