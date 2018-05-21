@@ -17,7 +17,8 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'mongoid'
+gem 'mongoid', '~> 7.0.1'
+gem 'figaro', '~> 1.1.1'
 
 gem 'rails-i18n'
 
