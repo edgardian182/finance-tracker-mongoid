@@ -173,8 +173,5 @@ production:
       # hosts:
         # - <%= uri.host %>:<%= uri.port %>
       uri: <%= ENV['MONGODB_URI'] %>
-      # options:
-      #   skip_version_check: true
-      #   safe: true
       options:
         connect_timeout: 15
