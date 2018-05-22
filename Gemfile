@@ -22,6 +22,14 @@ gem 'figaro', '~> 1.1.1'
 
 gem 'rails-i18n'
 
+# ------------------------------- Style and Authentication -----------------------------------
+gem 'bootstrap', '~> 4.1.0'
+gem 'jquery-rails'
+gem 'devise'
+gem 'devise-i18n'
+gem 'devise-bootstrapped', github: 'king601/devise-bootstrapped', branch: 'bootstrap4'
+# ------------------------------- End --------------------------------------------------------
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
